@@ -52,19 +52,6 @@
 +(NSString *)MD5ForUpper16Bate:(NSString *)str;
 </code></pre>
 
-### Base64
-<pre><code class="language-objectivec">
-+ (NSData *)dataWithBase64EncodedString:(NSString *)string;
-- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
-- (NSString *)base64EncodedString;
-
-+ (NSString *)stringWithBase64EncodedString:(NSString *)string;
-- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
-- (NSString *)base64EncodedString;
-- (NSString *)base64DecodedString;
-- (NSData *)base64DecodedData;
-</code></pre>
-
 ### QLRSAEncryptor
 <pre><code class="language-objectivec">
 /**
@@ -100,4 +87,18 @@
  */
 + (NSString *)decryptString:(NSString *)str privateKey:(NSString *)privKey;
 </code></pre>
+
+### Base64
+<pre><code class="language-objectivec">
++ (NSData *)dataWithBase64EncodedString:(NSString *)string;
+- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+- (NSString *)base64EncodedString;
+
++ (NSString *)stringWithBase64EncodedString:(NSString *)string;
+- (NSString *)base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+- (NSString *)base64EncodedString;
+- (NSString *)base64DecodedString;
+- (NSData *)base64DecodedData;
+</code></pre>
+
 
